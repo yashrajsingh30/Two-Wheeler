@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header{
+    background-color: rgb(12, 10, 10);
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.header h1{
+    color: rgb(185, 27, 27);
+}
+.header nav{
+    margin: auto auto;
+}
+.navbar ul{
+    display: flex;
+    padding: 0px;
+}
+.items{
+    list-style: none;
+    margin: 4px;
+}
+.items .dropdown{
+  padding:0px 15px;
+}
+.items a{
+    padding: 1px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+
+a.current{
+  color: red;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.navbar a:hover{
+  color: red;
+}
+
+.dropdown:hover .dropbtn {
+  color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+div.container{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+div.container h1, .div.container h2, div.container h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+hr{
+    border: 2px solid rgb(37, 35, 35);
+    background-color: rgb(37, 35, 35);
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+div.footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    font-size: large;
+}
+  .foot div:first-child{
+    color: black;
+    font-size: x-large;
+}
+  .foot div{
+    margin: 10px;
+}
+
+.foot div a{
+    text-decoration: none;
+    color: #75787B;
+}

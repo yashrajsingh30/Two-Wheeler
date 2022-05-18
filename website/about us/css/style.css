@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header{
+  background-color: rgb(12, 10, 10);
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.header h1{
+  color: rgb(185, 27, 27);
+}
+.header nav{
+  margin: auto auto;
+}
+.navbar ul{
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}
+.items{
+  list-style: none;
+  margin: 4px;
+}
+.items .dropdown{
+padding:0px 15px;
+}
+.items a{
+  padding: 1px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+
+a.current{
+color: red;
+}
+
+
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+padding: 0;
+color: white;
+}
+
+.navbar a:hover{
+color: red;
+}
+
+.dropdown:hover .dropbtn {
+color: red;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: black;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.head{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+hr{
+    border: 2px solid green;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 20%;
+    position: relative;
+    left: 20%;
+}
+.first-para{
+    width: 400px;
+    height: 100px;
+    margin-left: 283px;
+    margin-top: 20px;
+    line-height: 2.3;
+}
+
+div.leadership{
+    margin-top: 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.lead{
+    display: flex;
+    justify-content: space-evenly;
+}
+div.row{
+    display: flex;
+    flex-direction: column;
+}
+div.leaders{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 20px;
+    align-items: center;
+}
+.name{
+    color: #5d5d5d;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.description{
+    width: 300px;
+    height: 100px;
+}
+
+.browse-bikes{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .browse-bikes img{
+    max-width: 1280px;
+    max-height: 720px;
+  }
+  .content{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom-left{
+    position: absolute;
+    bottom: 160px;
+    left: 75px;
+  }
+  .new-page{
+    display: block;
+    position: absolute;
+    bottom: 110px;
+    left: 75px;
+  }
+  button.new-page{
+  background: rgb(214, 47, 0);
+  width: 100px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3)
+  }
+
+
+  hr.hr-foot{
+    border: 2px solid rgb(37, 35, 35);
+    background-color: rgb(37, 35, 35);
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+div.footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    font-size: large;
+  }
+  .foot div:first-child{
+    color: black;
+    font-size: x-large;
+  }
+  .foot div{
+    margin: 10px;
+  }
+  
+  .foot div a{
+    text-decoration: none;
+    color: #75787B;
+  }
+
+  .current{
+    color: red;
+}

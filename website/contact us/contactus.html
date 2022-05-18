@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ContactUsStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1 onclick="location.href='/index.html'">Royal Motor Work</h1>
+        <nav class="navbar">
+            <ul>
+                <li class="items"><a href="/index.html">Home</a></li>
+                <li class="items"><div class="dropdown">
+                  <button class="dropbtn">Motorcycles 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="/motorcycles/450.html">450</a>
+                    <a href="/motorcycles/himalayan.html">Himalayan</a>
+                    <a href="/motorcycles/cruiser.html">Cruiser</a>
+                  </div>
+                </div> 
+                <li class="items"><a href="/Services/service.html">Services</a></li>
+                <li class="items"><a href="/about us/about-us.html">About Us</a></li>
+                <li class="items"><a href="/contact us/contactus.html" class="current">Contact Us</a></li>
+            </ul>
+        </nav>
+      </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We would love to respond to your queries. <br>
+             Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send Your Requests</h3>
+
+                <form action>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Your First Name...">
+                        </div>
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Your Last Name...">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Phone Number</label>
+                            <input type="text" placeholder="Your Phone Number...">
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Your Email...">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message..."></textarea>
+
+                    <button type="submit" formaction="mailto:yashcoolrk@gmail.com">Send</button>
+
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contactus@rmw.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone No.</td>
+                        <td>+91 9827388768</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Royal Motor Works<br>
+                            C-4, Janakpuri<br>
+                            New Delhi-110058</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer-2">
+        <div class="foot">
+          <div>RMV</div>
+          <div><a href="/about us/about-us.html">Our Story</a></div>
+          <div><a href="/book-test-drive/book.html">Book A Test Drive</a></div>
+        </div>
+        <div class="foot">
+          <div>Products</div>
+          <div><a href="/motorcycles/450.html">450</a></div>
+          <div><a href="/motorcycles/himalayan.html">Himalayan</a></div>
+          <div><a href="/motorcycles/cruiser.html">Cruiser</a></div>
+        </div>
+        <div class="foot">
+          <div>Legel</div>
+          <div><a href="/legel/terms.html">Term</a></div>
+          <div><a href="/legel/privacy.html">Privacy Policy</a></div>
+        </div>
+      </div>
+
+        <script>
+          function sendMail() {
+              var email = document.getElementsByClassName('input-group').elements['email'].innertext;
+              var link = email
+              
+            //   + "?cc=myCCaddress@example.com"
+              + "&subject=" + encodeURIComponent("Thank You For Contacting Us")
+              + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+              ;
+              
+              window.location.href = link;
+            }
+        </script>
+            
+
+</body>
+</html>

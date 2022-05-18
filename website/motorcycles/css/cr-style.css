@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  background-color: rgb(12, 10, 10);
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.header h1{
+  color: rgb(185, 27, 27);
+}
+.header nav{
+  margin: auto auto;
+}
+.navbar ul{
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}
+.items{
+  list-style: none;
+  margin: 4px;
+}
+.items .dropdown{
+padding:0px 15px;
+}
+.items a{
+  padding: 1px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+padding: 0;
+color: red;
+}
+
+.navbar a:hover{
+color: red;
+}
+
+.dropdown:hover .dropbtn {
+color: red;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: black;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* .mySlides {display: none} */
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  max-height: 440px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(147, 147, 147, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+  }
+  .container-1 img{
+      width: 100%;
+  }
+  .content{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom-left{
+    position: absolute;
+    bottom: 70%;
+    left: 80%;
+  }
+  .new-page{
+    display: block;
+    position: absolute;
+    bottom: 64%;
+    left: 63%;
+    font-weight: bold;
+  }
+
+
+  .container-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .container-2 img{
+      width: 100%;
+      object-fit: cover;
+  }
+  .content{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom-left-2{
+    position: absolute;
+    bottom: 70%;
+    left: 72%;
+  }
+  .new-page-2{
+    display: block;
+    position: absolute;
+    bottom: 60%;
+    left: 65%;
+    font-weight: bolder;
+  }
+
+
+  .container-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .container-3 img{
+      width: 100%;
+      object-fit: cover;
+  }
+  .content{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom-left-3{
+    position: absolute;
+    bottom: 17%;
+    left: 30%;
+  }
+  .new-page-3{
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    font-weight: bold;
+  }
+
+
+  div.footer{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#foot-1{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+div.test-drive{
+    margin-bottom: 30px;
+}
+form{
+    position: relative;
+    top: 20px;
+    transform: scale(1.3);
+}
+div.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border: 0.5px solid black;
+    outline: none;
+    padding-bottom: 5px;
+}
+input[placeholder]
+{
+    padding-top: 5px;
+    padding-left: 15px;
+}
+::placeholder{
+    color: black;
+    font-weight: 500;
+}
+.disc{
+    margin-top: 20px;
+    padding-left: 460px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background: black;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+hr{
+    border: 2px solid rgb(37, 35, 35);
+    background-color: rgb(37, 35, 35);
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+div.footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    font-size: large;
+  }
+  .foot div:first-child{
+    color: black;
+    font-size: x-large;
+  }
+  .foot div{
+    margin: 10px;
+  }
+  .foot div a{
+    text-decoration: none;
+    color: #75787B;
+  }
